@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Averia+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Padauk&display=swap');
+
+/* TOUT ELÉMENT */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  /*padding: 0;*/
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #F1F1F1;
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /*margin-left: 15px;*/
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex:1;
+	/*min-height: 75vh;*/
+  
+}
+
+.padding-left {
+  padding-left:15%;
+}
+
+.title-card {
+  width: 80%;
+  height: 200px;
+  min-width: 200px;
+   background: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
+  margin: 2% auto;
+  text-align: center;
+  padding-top: auto 2vh;
+  border-radius: 10px;
+}
+
+.title-card-text {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: relative;
+
+  font-size : 1.75em;
+  text-transform: uppercase;
+
+
+
+}
+
+.title-card-text a {
+ color: #333333;
+ text-decoration: none;
+}
+
+.title-card-text::after {
+    content:'';
+    display: block;
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    background: #333;
+    margin: 5px auto 0 auto;
+    transition: width 0.2s ease-in-out;
+  }
+
+.title-card-text:hover::after {
+    width: 60%;
+  }
+
+/* Body - Header / Footer */
+  #banner-header {
+    margin-top: 25;
+    background-image: url('../img/banner_violet.png');
+    width: 100%;
+  }
+
+  #banner-footer {
+    background-image: url('../img/banner_violet.png');
+    min-height:88px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2vh;
+  }
+
+  #banner-footer, #banner-header {
+    background-repeat: no-repeat;
+    left: 0;
+    right:0;
+
+  }
+
+  .text-banner {
+    color: white;
+    margin: auto;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+
+  }
+
+  #banner-header .text-banner {
+    height: 75px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  #banner-footer .text-banner {
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px 0 30px 15px ;
+  }
+
+  #banner-footer .text-banner > p {
+    float: right;
+    margin-right: 1rem;
+  }
+
+  .text-banner-left {
+    float: left;
+    /*padding-left: 17%;*/
+  }
+
+  .text-banner-right {
+    float: right;
+  }
+/* Body - Header / Footer - FIN*/
+
+
+/* Body - Menu */
+
+  nav {
+    width:15%;
+    min-width: 150px;
+    height:100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
+    position: fixed;
+    z-index: 99;
+    padding-top: 10vh;
+  }
+
+  .liste-nav {
+    list-style: none;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    /*margin-top: 75px;*/
+  }
+
+
+  .item {
+    /*height: 100%;*/
+    text-align: center;
+    line-height: 50px;
+    padding: 5px 15px 15px 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+
+  }
+
+  .item a {
+      color:#333333;
+      text-decoration-line: none;
+  }
+
+  .item::after {
+    content:'';
+    display: block;
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    background: #333;
+    margin: -15px auto 0 auto;
+    transition: width 0.2s ease-in-out;
+  }
+
+  .item:hover::after {
+    width: 40%;
+  }
+
+  /*Bouton Responsive*/
+
+  .btn-responsive-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 30px; /*au lieu de 40px*/
+    background: #rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
+    display: none;
+  }
+
+  .lignes {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: #333;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    margin-top: 5px;
+  }
+
+  .lignes:nth-child(1) {
+    top: 0px;
+  }
+
+  .lignes:nth-child(2) {
+    top: 10px;
+  }
+
+  .lignes:nth-child(3) {
+    top: 20px;
+  }
+
+  .btn-responsive-menu.active .lignes:nth-child(1) {
+    top: 12px;
+    transform: rotate(135deg);
+  }
+
+  .btn-responsive-menu.active .lignes:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20);
+  }
+
+  .btn-responsive-menu.active .lignes:nth-child(3) {
+    top: 12px;
+    transform: rotate(-135deg);
+  }
+/* Body - Menu - FIN */
+
+
+/**/
+.page-title {
+  text-align: center;
+  background-color: #fff;
+  padding: 5vh;
+  text-transform: uppercase;
+}
+
+.spacer {
+  background-color: #fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 2vh auto;
+  text-transform: uppercase;
+}
+
+.grey-bg {
+  background-color: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
+}
+
+.half-space {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.third-space {
+  width: 31%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.fifth-space {
+  width: 19%;
+  display: inline-block;
+  padding: 15% 4.5% ;
+}
+
+
+/* Sections accordéon */
+
+  .card-header {
+    background: #f1f1f1;
+  }
+
+  .accordion-heading
+  {
+    /*background: #f2e6ff;*/
+    color: #8D2F5D;
+    /*border-color: #8D2F5D;*/
+    text-transform: uppercase;
+  }
+/* Sections accordéon - FIN*/
+/**/
+.diploma-details {
+  padding: 10px;
+}
+
+.diploma-info {
+  display:inline-block;
+  margin-left: 15px;
+  padding: 15px 20px 15px 0;
+}
+
+.uni-info, .year-info {
+  min-width: 35%;
+  /*min-width: 150px;*/
+}
+
+img.details{
+  height:20px;
+}
+
+/* EXPERIENCES - Job listes */
+  .job-title {
+    font-size: 1.2em;
+    padding-left: 2vw;
+    color: #8D2F5D;
+    display:inline-block;
+  }
+
+  .job-location {
+    padding-left: 1vw;
+    display:inline-block;
+
+  }
+
+  .job-dates {
+    /*padding-left: 6vw;*/
+    float: right;
+    display:inline-block;
+
+  }
+
+  .job-description {
+    padding-bottom: 5vh;
+  }
+/* EXPERIENCES - Job listes - FIN */
+
+/* COMPETENCES - Flip card*/
+  /* Grille */
+
+    .card-grid {
+      display: grid;
+      grid-template-rows: repeat(3, 300px);
+      height: 950px;
+      width: 220px;
+      grid-gap: 10px;
+      padding: 10px;
+      background-color: #5B005B;
+      margin: 7.5%  auto;
+    }
+
+    .flip-card {
+      /*background-color: #f2e6ff;*/
+      text-align: center;
+      cursor:pointer;
+      position: relative;
+    }
+
+    .front, .back {
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      position: absolute;
+      transition: transform 0.8s linear;
+
+    }
+
+    .text-content {
+      background-color:  #8D2F5D;
+      width: 100%;
+      height: 100%;
+      padding: 1vh;
+      font-family: 'Exo 2', sans-serif;
+      color: white;
+    }
+
+    .text-content a {
+      color: #000066;
+    }
+
+    .couv-flip-card {
+      width: 200px;
+      height: auto;
+    }
+
+    .animation-desc {
+      font-size: 0.75em;
+    }
+  /* Grille */
+
+  /* Animation de rotation*/
+    .front {
+      transform: perspective(600px) rotateY(0deg);
+    }
+
+    .back {
+      transform: perspective(600px) rotateY(180deg); 
+    }
+
+    .flip-card:hover .front, .flip-card:active .front {
+      transform: perspective(600px) rotateY(-180deg);
+    }
+
+    .flip-card:hover .back, .flip-card:active .back {
+      transform: perspective(600px) rotateY(0deg);
+    }
+  /* Animation de rotation - FIN*/
+/* COMPETENCES - Flip card - FIN*/
+
+/* COMPETENCES*/
+.level {
+  float:right;
+}
+
+.it-skill-title {
+  font-size: 1.2em;
+  color: #8D2F5D;
+  display:inline-block;
+}
+/* COMPETENCES - FIN*/
+
+
+@media screen and (min-width : 960px){
+
+  .card-grid {
+    grid-template-columns: repeat(3, 300px);
+    height: 320px;
+    width: 940px;
+    margin: 2vh  auto;
+  }
+
+  .couv-flip-card {
+      height: 300px;
+      width: auto;
+    }
+
+  .animation-title {
+    font-size: 1.2em;
+  }
+
+  .animation-desc {
+      font-size: 1em;
+    }
+
+  .text-content {
+     
+      padding: 1.5vh;
+     
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+
+  .btn-responsive-menu {
+    display:block;
+  }
+  
+  .item::after {
+    display: none;
+  }
+
+  nav {
+    width: 50px;
+    min-width: 50px;
+  }
+
+  nav.active {
+    width:30%;
+    min-width: 150px;
+
+  }
+
+  .padding-left {
+    padding-left: 50px;
+  }
+
+  .liste-nav {
+    top: 50px;
+    left: -250px;
+    flex-direction: column;
+    justify-content: flex-start;
+    height:100%;
+  }
+
+  .liste-nav .item {
+    width: 100%;
+    height: 50px;
+    /*background: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;*/
+    margin-top: -1px;
+    padding: 5px 0px;
+    text-align: left;
+
+  }
+
+  .liste-nav.active-menu {
+    left: -20px;
+  }
+
+  .diploma-info{
+    display: block;
+  }
+
+  .text-banner-left {
+    text-align: center;
+    padding-left: 60px;
+    float:none;
+
+  }
+  .text-banner-right {
+    display:none;
+  }
+
+  .half-space {
+    width: 90%;
+
+  }
+
+  .third-space {
+    width: 90%;
+  }
+
+  .fifth-space {
+    width: 80%;
+    left: 10%;
+  }
+
+
+}
