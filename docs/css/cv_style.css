@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Padauk&display=swap');
 
-/* TOUT ELÉMENT */
+/* TOUT EL&eacute;MENT */
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -42,6 +42,30 @@ main {
   padding-left:15%;
 }
 
+.light-padding-left {
+  padding-left: 1.5vw;
+}
+
+.hobbies-text {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 5px;
+}
+
+.hobbies-icon {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hobbies-card {
+  height: 275px;
+  background: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
+  margin: 3vh 1.5vh;
+  border-radius: 10px;
+}
+
 .title-card {
   width: 80%;
   height: 200px;
@@ -49,7 +73,7 @@ main {
    background: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
   margin: 2% auto;
   text-align: center;
-  padding-top: auto 2vh;
+  padding-top: 2vh;
   border-radius: 10px;
 }
 
@@ -59,12 +83,8 @@ main {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   position: relative;
-
   font-size : 1.75em;
   text-transform: uppercase;
-
-
-
 }
 
 .title-card-text a {
@@ -255,6 +275,10 @@ main {
 
 
 /**/
+a {
+  color: #000066;
+}
+
 .page-title {
   text-align: center;
   background-color: #fff;
@@ -270,6 +294,14 @@ main {
   font-weight: bold;
 }
 
+.centered {
+  text-align: center;
+}
+
+.space-bottom {
+  padding-bottom: 2.5vh;
+}
+
 .sub-title {
   text-align: center;
   margin: 2vh auto;
@@ -277,7 +309,11 @@ main {
 }
 
 .grey-bg {
-  background-color: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
+}
+
+.violet-bg {
+  background-color: #5B005B;
 }
 
 .half-space {
@@ -286,10 +322,16 @@ main {
   vertical-align: top;
 }
 
+.half-space img, .third-space img {
+  width: 80%;
+  height: auto;
+}
+
 .third-space {
   width: 31%;
   display: inline-block;
   vertical-align: top;
+  padding:0.5vh;
 }
 
 .fifth-space {
@@ -298,8 +340,12 @@ main {
   padding: 15% 4.5% ;
 }
 
+.icon {
+  max-width:150px;
+}
 
-/* Sections accordéon */
+
+/* Sections accord&eacute;on */
 
   .card-header {
     background: #f1f1f1;
@@ -308,11 +354,12 @@ main {
   .accordion-heading
   {
     /*background: #f2e6ff;*/
-    color: #8D2F5D;
+    color: #5B005B;
     /*border-color: #8D2F5D;*/
     text-transform: uppercase;
   }
-/* Sections accordéon - FIN*/
+/* Sections accord&eacute;on - FIN*/
+
 /**/
 .diploma-details {
   padding: 10px;
@@ -337,7 +384,7 @@ img.details{
   .job-title {
     font-size: 1.2em;
     padding-left: 2vw;
-    color: #8D2F5D;
+    color: #5B005B;
     display:inline-block;
   }
 
@@ -362,7 +409,7 @@ img.details{
 /* COMPETENCES - Flip card*/
   /* Grille */
 
-    .card-grid {
+    .card-grid, .card-grid-vert  {
       display: grid;
       grid-template-rows: repeat(3, 300px);
       height: 950px;
@@ -371,6 +418,7 @@ img.details{
       padding: 10px;
       background-color: #5B005B;
       margin: 7.5%  auto;
+      border-radius: 10px;
     }
 
     .flip-card {
@@ -378,6 +426,7 @@ img.details{
       text-align: center;
       cursor:pointer;
       position: relative;
+
     }
 
     .front, .back {
@@ -386,7 +435,7 @@ img.details{
       backface-visibility: hidden;
       position: absolute;
       transition: transform 0.8s linear;
-
+      border-radius: 10px;
     }
 
     .text-content {
@@ -398,13 +447,11 @@ img.details{
       color: white;
     }
 
-    .text-content a {
-      color: #000066;
-    }
 
     .couv-flip-card {
       width: 200px;
       height: auto;
+      border-radius: 10px;
     }
 
     .animation-desc {
@@ -438,11 +485,48 @@ img.details{
 
 .it-skill-title {
   font-size: 1.2em;
-  color: #8D2F5D;
+  color: #5B005B;
   display:inline-block;
 }
 /* COMPETENCES - FIN*/
 
+
+/* TRAVAUX */
+  .couv-card {
+    width: 28%;
+    min-width: 150px;
+    height: 300px;
+    max-width: 250px;
+    text-align: center;
+    margin: 5vh;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .couv-card img {
+      height: 95%;
+      width: auto;
+      border-radius: 10%;
+      margin:1vh;
+    }
+  
+  .review-card {
+      width: 60%;
+      margin: 5vh 3%;
+      display: inline-block;
+      background-color: white;
+      vertical-align: top;
+      padding: 2vh;
+    }
+
+  .poster {
+    width: 95%;
+  }
+
+/* Zone de description - FIN */
+
+
+/* TRAVAUX - FIN */
 
 @media screen and (min-width : 960px){
 
@@ -549,5 +633,21 @@ img.details{
     left: 10%;
   }
 
+  .couv-card {
+    width: 80%;
+  }
 
+  .couv-card img{
+    height: 90%;
+  }
+
+  .review-card {
+    width:80%;
+    margin: 2vh 5vh;
+  }
+}
+
+.text-pull-right {
+  text-align:right;
+  margin-right: 2vw;
 }
