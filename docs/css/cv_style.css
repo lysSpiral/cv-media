@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Padauk&display=swap');
 
-/* TOUT EL&eacute;MENT */
+/* TOUT ELEMENT */
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -345,7 +345,7 @@ a {
 }
 
 
-/* Sections accord&eacute;on */
+/* Sections accordeon */
 
   .card-header {
     background: #f1f1f1;
@@ -358,7 +358,7 @@ a {
     /*border-color: #8D2F5D;*/
     text-transform: uppercase;
   }
-/* Sections accord&eacute;on - FIN*/
+/* Sections accordeon - FIN*/
 
 /**/
 .diploma-details {
