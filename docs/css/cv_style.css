@@ -286,10 +286,6 @@ a {
   text-transform: uppercase;
 }
 
-.spacer {
-  background-color: #fff;
-}
-
 .bold {
   font-weight: bold;
 }
@@ -308,6 +304,10 @@ a {
   text-transform: uppercase;
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .grey-bg {
   background: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
 }
@@ -320,15 +320,24 @@ a {
   width: 47%;
   display: inline-block;
   vertical-align: top;
+  padding:2vw;
 }
 
-.half-space img, .third-space img {
+.half-space img, .third-space img, .fourth-space img {
   width: 80%;
   height: auto;
+
 }
 
 .third-space {
   width: 31%;
+  display: inline-block;
+  vertical-align: top;
+  padding:0.5vh;
+}
+
+.fourth-space {
+  width: 23%;
   display: inline-block;
   vertical-align: top;
   padding:0.5vh;
@@ -358,10 +367,15 @@ a {
     /*border-color: #8D2F5D;*/
     text-transform: uppercase;
   }
+
+  .large-border-bottom {
+    border-bottom: 15px solid #F1F1F1 !important;
+    /*margin-bottom: 15px;*/
+  }
 /* Sections accordeon - FIN*/
 
 /**/
-.diploma-details {
+.padding-10 {
   padding: 10px;
 }
 
@@ -517,6 +531,7 @@ img.details{
       background-color: white;
       vertical-align: top;
       padding: 2vh;
+      border-radius: 5%;
     }
 
   .poster {
@@ -650,4 +665,21 @@ img.details{
 .text-pull-right {
   text-align:right;
   margin-right: 2vw;
+}
+
+.no-space-bottom {
+  padding-bottom: 0; 
+  margin-bottom: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.text-violet {
+  color: #5B005B;
+}
+
+img .border {
+  border: 2px #f1f1f1 solid;
 }
