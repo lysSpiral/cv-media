@@ -353,6 +353,10 @@ a {
   max-width:150px;
 }
 
+.btn-more-info {
+  background: rgba(0, 0, 0, 0) linear-gradient(75.6deg, rgb(204, 204, 204), rgb(191, 191, 191)) repeat scroll 0% 0%;
+}
+
 
 /* Sections accordeon */
 
