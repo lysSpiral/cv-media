@@ -1,4 +1,4 @@
-console.log('Connexion js établie');
+console.log('Connexion js établie - script Navbar');
 
 const btnRespMenu = document.querySelector('.btn-responsive-menu');
 const listeMenu = document.querySelector('.liste-nav');

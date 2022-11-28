@@ -24,7 +24,7 @@
 		</div>
 	</header>
 
-		<nav id='nav'> 
+	<nav id='nav'> 
 		<ul class="liste-nav">
 				<li class="item"><a href="index.html">Accueil</a></li>
 				<li class="item"><a href="formations.html">Formations</a></li>
@@ -49,15 +49,15 @@
 				Exp&eacute;riences 
 			</h2>
 		</div>
-		<p class="padding-10 white-bg">Cliquer sur chaque domaine pour voir la liste des postes et le descriptif des missions</p>
+		<p class="padding-10 white-bg centered">Cliquer sur chaque domaine pour voir la liste des postes et le descriptif des missions</p>
 		
 
 <div id="lecturePub">
 	<div class="accordion" id="accordionLecturePub">
 		<div id="LecturePub" class="card border-0" >
 	<div id="headingLecturePub" class="card-header">
-		<h2 id="tileLecturePub">
-			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseLecturePub" aria-expanded="true" aria-controls="collapseLecturePub"> Lecture publique </button>
+		<h2 id="tileLecturePub" onclick="switchImg('minusLecturePub')">
+			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseLecturePub" aria-expanded="true" aria-controls="collapseLecturePub"> Lecture publique <img id="minusLecturePub" class="details pull-right" src='img/minus.png'> </button>
 		</h2>
 	</div>
 
@@ -191,106 +191,123 @@
 
 <div id="documentation">
 	<div class="accordion" id="accordionDocumentation">
-		<div id="Documentation" class="card border-0" >
-	<div id="headingDocumentation" class="card-header">				<h2 id="tileDocumentation">
-			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseDocumentation" aria-expanded="true" aria-controls="collapseDocumentation"> Documentation </button>
-		</h2>
-	</div>
+		<div id="Documentation" class="card border-0">
+			<div id="headingDocumentation" class="card-header" >				
+				<h2 id="tileDocumentation" onclick="switchImg('plusDocumentation')">
+					<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseDocumentation" aria-expanded="true" aria-controls="collapseDocumentation"> Documentation <img id="plusDocumentation" class="details pull-right" src='img/plus.png'></button>
+				</h2>
+			</div>
 
-	<div id="collapseDocumentation" class="collapse" aria-labelledby="headingDocumentation" data-parent="#accordionDocumentation">
-	 	<div id="bodyDocumentation" class="card-body border-0">
-			<div id='jobListDoc'>
+			<div id="collapseDocumentation" class="collapse" aria-labelledby="headingDocumentation" data-parent="#accordionDocumentation">
+			 	<div id="bodyDocumentation" class="card-body border-0">
+					<div id='jobListDoc'>
+						<div class="job-description">
+							<p>
+								<span class="job-dates">Juil. – Oct. 2022</span>
+								<span class="job-title">Opératrice de documentation</span>
+								<span class="job-location">Decitre, Lyon</span>
+							</p>
+							<p>
+								R&eacute;f&eacute;rencement des ouvrages commercialis&eacute;s dans le r&eacute;seau Decitre / Furet du Nord dans la base de donn&eacute;es interne&nbsp;:
+								<ul>
+									<li>Révision des informations envoyées par flux&nbsp;;</li>
+									<li>Saisie des informations à partir des documents physiques&nbsp;;</li>
+									<li>Relecture des résumés saisis par OCR&nbsp;;</li>
+									<li>Création de nouvelles fiches à la demande des éditeurs et diffuseurs.</li>
+								</ul>
+							</p>
+						</div>
 
-				<div class="job-description">
-					<p>
-						<span class="job-dates">Juil. 2014 – Mars 2015</span>
-						<span class="job-title">Documentaliste</span>
-						<span class="job-location">Magazine L’Etudiant, Paris</span>
-					</p>
-					<p>
-						<ul>
-							<li>Mise &agrave; jour annuelle de l’annuaire de formations&nbsp;: v&eacute;rification des informations sur les &eacute;tablissements (apprentissage et enseignement sup&eacute;rieur hors universit&eacute;s)&nbsp;;</li>
-							<li>Salons l’Etudiant&nbsp;: service d’information au public au stand Documentation. </li>
-						</ul>
-					</p>
-				</div>
-				<div class="job-description">
-					<p>
-						<span class="job-dates">Sep. – Nov. 2013</span>
-						<span class="job-title">Catalogueuse</span>
-						<span class="job-location">ISSN, Paris</span>
-					</p>
-					<p>V&eacute;rification de m&eacute;tadonn&eacute;es pour ROAD (Directory of Open Access scholarly Resources), portail de notices bibliographiques recensant les ressources scientifiques en acc&egrave;s libre&nbsp;: 
-						<ul>
-							<li>V&eacute;rification de ressources scientifiques en ligne (Europe, Am&eacute;rique, Asie) : v&eacute;rification des conditions d’acc&egrave;s, recherche des entit&eacute;s &eacute;ditrices, indexation&nbsp;;</li>
-							<li>Entr&eacute;e et correction de m&eacute;tadonn&eacute;es (fichiers Excel).</li>
-						</ul>
-					</p>
-				</div>
+						<div class="job-description">
+							<p>
+								<span class="job-dates">Juil. 2014 – Mars 2015</span>
+								<span class="job-title">Documentaliste</span>
+								<span class="job-location">Magazine L’Etudiant, Paris</span>
+							</p>
+							<p>
+								<ul>
+									<li>Mise &agrave; jour annuelle de l’annuaire de formations&nbsp;: v&eacute;rification des informations sur les &eacute;tablissements (apprentissage et enseignement sup&eacute;rieur hors universit&eacute;s)&nbsp;;</li>
+									<li>Salons l’Etudiant&nbsp;: service d’information au public au stand Documentation. </li>
+								</ul>
+							</p>
+						</div>
+						<div class="job-description">
+							<p>
+								<span class="job-dates">Sep. – Nov. 2013</span>
+								<span class="job-title">Catalogueuse</span>
+								<span class="job-location">ISSN, Paris</span>
+							</p>
+							<p>V&eacute;rification de m&eacute;tadonn&eacute;es pour ROAD (Directory of Open Access scholarly Resources), portail de notices bibliographiques recensant les ressources scientifiques en acc&egrave;s libre&nbsp;: 
+								<ul>
+									<li>V&eacute;rification de ressources scientifiques en ligne (Europe, Am&eacute;rique, Asie) : v&eacute;rification des conditions d’acc&egrave;s, recherche des entit&eacute;s &eacute;ditrices, indexation&nbsp;;</li>
+									<li>Entr&eacute;e et correction de m&eacute;tadonn&eacute;es (fichiers Excel).</li>
+								</ul>
+							</p>
+						</div>
+						
+						<div class="job-description">
+							<p>
+								<span class="job-dates">Mars – Nov. 2009</span>
+								<span class="job-title">Documentaliste photo </span>
+								<span class="job-location">The Photolibrary Group, Londres</span>
+							</p>
+							<p>Dans une agence photographique de collections g&eacute;n&eacute;ralistes et sp&eacute;cialis&eacute;es — zoologie, horticulture, tourisme&nbsp;:
+								<ul>
+									<li>Recherches iconographiques pour la presse (quotidiens et magazines adultes et jeunesse) et l’&eacute;dition (manuels scolaires, guides de voyage, romans…)&nbsp;;</li>
+									<li>Alimentation de la base de donn&eacute;es image interne (ajout des images et de leurs m&eacute;tadonn&eacute;es).</li>
+								</ul>
+							</p>
 				
-				<div class="job-description">
-					<p>
-						<span class="job-dates">Mars – Nov. 2009</span>
-						<span class="job-title">Documentaliste photo </span>
-						<span class="job-location">The Photolibrary Group, Londres</span>
-					</p>
-					<p>Dans une agence photographique de collections g&eacute;n&eacute;ralistes et sp&eacute;cialis&eacute;es — zoologie, horticulture, tourisme&nbsp;:
-						<ul>
-							<li>Recherches iconographiques pour la presse (quotidiens et magazines adultes et jeunesse) et l’&eacute;dition (manuels scolaires, guides de voyage, romans…)&nbsp;;</li>
-							<li>Alimentation de la base de donn&eacute;es image interne (ajout des images et de leurs m&eacute;tadonn&eacute;es).</li>
-						</ul>
-					</p>
-		
-				</div>
+						</div>
 
-				<div class="job-description">
-					<p>
-						<span class="job-dates">Jan. – Mars 2009</span>
-						<span class="job-title">Assistante de projet documentaire </span>
-						<span class="job-location">The Wellcome Library, Londres</span>
-					</p>
-					<p>Projet de r&eacute;novation du syst&egrave;me de cotation de la collection de p&eacute;riodiques (19e-21e si&egrave;cles) au sein d'une biblioth&egrave;que sp&eacute;cialis&eacute;e en m&eacute;decine&nbsp; : 
-						<ul>
-							<li>Allocation d’une nouvelle cote &agrave; plus de 7&nbsp;000 titres, utilisant les entr&eacute;es MARC pour distinguer ou regrouper les collections&nbsp;;</li>
-							<li>Mise &agrave; jour des entr&eacute;es MARC.</li>
-						</ul>
-					</p>
-		
-				</div>
+						<div class="job-description">
+							<p>
+								<span class="job-dates">Jan. – Mars 2009</span>
+								<span class="job-title">Assistante de projet documentaire </span>
+								<span class="job-location">The Wellcome Library, Londres</span>
+							</p>
+							<p>Projet de r&eacute;novation du syst&egrave;me de cotation de la collection de p&eacute;riodiques (19e-21e si&egrave;cles) au sein d'une biblioth&egrave;que sp&eacute;cialis&eacute;e en m&eacute;decine&nbsp; : 
+								<ul>
+									<li>Allocation d’une nouvelle cote &agrave; plus de 7&nbsp;000 titres, utilisant les entr&eacute;es MARC pour distinguer ou regrouper les collections&nbsp;;</li>
+									<li>Mise &agrave; jour des entr&eacute;es MARC.</li>
+								</ul>
+							</p>
+				
+						</div>
 
-				<div class="job-description">
-					<p>
-						<span class="job-dates">Août – D&eacute;c. 2008</span>
-						<span class="job-title">Charg&eacute;e d’indexation </span>
-						<span class="job-location">	LexisNexis, Londres</span>
-					</p>
-					<p>Dans une agence d’informations juridiques et &eacute;conomiques, membre de l’<em>Entity Indexing Team</em>, en charge des entr&eacute;es utilis&eacute;es pour l’indexation automatique d'articles de presse&nbsp;:
-						<ul>
-							<li>Recherche approfondie d’informations sur l’&eacute;volution du statut l&eacute;gal d’entreprises françaises et am&eacute;ricaines&nbsp;;</li>
-							<li>Mise &agrave; jour des entr&eacute;es pour des entreprises françaises et am&eacute;ricaines.</li>
-						</ul>
-					</p>
-		
-				</div>
-				<div class="job-description">
-					<p>
-						<span class="job-dates">Oct. 2007 – Juil. 2008</span>
-						<span class="job-title">Charg&eacute;e de contenu </span>
-						<span class="job-location">The Energy Industries Council, Londres</span>
-					</p>
-					<p>Projet de r&eacute;novation du syst&egrave;me de gestion de la base de donn&eacute;es <em>Projects</em>, r&eacute;pertoriant les projets reli&eacute;s aux industries de l’&eacute;nergie dans le monde&nbsp;:
-						<ul>
-							<li>Conversion des m&eacute;tadonn&eacute;es pour plus de 4 000 projets et cr&eacute;ation de rapports sur le contenu de la base&nbsp;;</li>
-							<li>Mise en place d’un forum destin&eacute; au personnel participant au projet et aux testeurs Beta externes&nbsp;;</li>
-							<li>Conception et impl&eacute;mentation du syst&egrave;me d’archivage pour la documentation relative au projet.</li>
-						</ul>
-					</p>
-		
+						<div class="job-description">
+							<p>
+								<span class="job-dates">Août – D&eacute;c. 2008</span>
+								<span class="job-title">Charg&eacute;e d’indexation </span>
+								<span class="job-location">	LexisNexis, Londres</span>
+							</p>
+							<p>Dans une agence d’informations juridiques et &eacute;conomiques, membre de l’<em>Entity Indexing Team</em>, en charge des entr&eacute;es utilis&eacute;es pour l’indexation automatique d'articles de presse&nbsp;:
+								<ul>
+									<li>Recherche approfondie d’informations sur l’&eacute;volution du statut l&eacute;gal d’entreprises françaises et am&eacute;ricaines&nbsp;;</li>
+									<li>Mise &agrave; jour des entr&eacute;es pour des entreprises françaises et am&eacute;ricaines.</li>
+								</ul>
+							</p>
+				
+						</div>
+						<div class="job-description">
+							<p>
+								<span class="job-dates">Oct. 2007 – Juil. 2008</span>
+								<span class="job-title">Charg&eacute;e de contenu </span>
+								<span class="job-location">The Energy Industries Council, Londres</span>
+							</p>
+							<p>Projet de r&eacute;novation du syst&egrave;me de gestion de la base de donn&eacute;es <em>Projects</em>, r&eacute;pertoriant les projets reli&eacute;s aux industries de l’&eacute;nergie dans le monde&nbsp;:
+								<ul>
+									<li>Conversion des m&eacute;tadonn&eacute;es pour plus de 4 000 projets et cr&eacute;ation de rapports sur le contenu de la base&nbsp;;</li>
+									<li>Mise en place d’un forum destin&eacute; au personnel participant au projet et aux testeurs Beta externes&nbsp;;</li>
+									<li>Conception et impl&eacute;mentation du syst&egrave;me d’archivage pour la documentation relative au projet.</li>
+								</ul>
+							</p>
+				
+						</div>
+					</div>
+			 		
 				</div>
 			</div>
-	 		
-		</div>
-	</div>
 		</div>
 	</div>
 </div> 
@@ -302,8 +319,8 @@
 <div id="otherFields">
 	<div class="accordion" id="accordionOtherFields">
 		<div id="OtherFields" class="card border-0" >
-	<div id="headingOtherFields" class="card-header">				<h2 id="tileOtherFields">
-			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseOtherFields" aria-expanded="true" aria-controls="collapseOtherFields"> Autres domaines </button>
+	<div id="headingOtherFields" class="card-header" >	<h2 id="tileOtherFields" onclick="switchImg('plusOtherFields')">
+			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseOtherFields" aria-expanded="true" aria-controls="collapseOtherFields"> Autres domaines (Support logiciel, Enseignement, PAO, Gestion de projets culturels) <img id="plusOtherFields" class="details pull-right" src='img/plus.png'></button>
 		</h2>
 	</div>
 
@@ -403,6 +420,7 @@
 <!-- SCRIPTS -->
 
 <script src="./js/navbar_script.js" type="text/javascript"></script>
+<script src="./js/general_script.js" type="text/javascript"></script>
 
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

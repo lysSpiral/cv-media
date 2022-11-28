@@ -376,6 +376,10 @@ a {
     border-bottom: 15px solid #F1F1F1 !important;
     /*margin-bottom: 15px;*/
   }
+
+  .pull-right{
+    float: right;
+  }
 /* Sections accordeon - FIN*/
 
 /**/
@@ -404,6 +408,13 @@ img.details{
     padding-left: 2vw;
     color: #5B005B;
     display:inline-block;
+  }
+
+   .job-title-centered {
+    font-size: 1.2em;
+    padding-left: 2vw;
+    color: #5B005B;
+    text-align: center;
   }
 
   .job-location {

@@ -49,13 +49,14 @@
 					Comp&eacute;tences 
 				</h2>
 			</div>
-			<p class="padding-10 white-bg">Cliquer sur chaque domaine pour en savoir plus</p>
+			<p class="padding-10 white-bg centered">Cliquer sur chaque domaine pour en savoir plus</p>
 
 			<div id="bibGID">
 				<div class="accordion" id="accordionBibGID">
 					<div id="BibGID" class="card border-0" >
-						<div id="headingBibGID" class="card-header">				<h2 id="tileBibGID">
-							<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseBibGID" aria-expanded="true" aria-controls="collapseBibGID"> Biblioth&eacute;conomie &amp; Documentation </button>
+						<div id="headingBibGID" class="card-header">				
+							<h2 id="tileBibGID" onclick="switchImg('plusBibGID')">
+							<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseBibGID" aria-expanded="true" aria-controls="collapseBibGID"> Biblioth&eacute;conomie &amp; Documentation <img id="plusBibGID" class="details pull-right" src='img/plus.png'></button>
 						</h2>
 					</div>
 					<div id="detailsBibGID" class="padding-10">
@@ -65,9 +66,8 @@
 					<div id="collapseBibGID" class="collapse" aria-labelledby="headingBibGID" data-parent="#accordionBibGID">
 						<div id="bodyBibGID" class="card-body border-0">
 							<div id="gestionColl" class="job-description half-space">
-								<p>
-									<span class="job-title">Organiser et g&eacute;rer un fonds </span>
-									(biblioth&egrave;que municipale, centre de documentation, agence photographique)
+								<p class="job-title">Organiser et g&eacute;rer un fonds
+									(biblioth&egrave;que municipale, centre de documentation)
 								</p>
 								<p>
 									<ul>
@@ -83,7 +83,7 @@
 
 							<div id="rechercheInfo" class="job-description half-space">
 								<p>
-									<span class="job-title">Rechercher des informations / Cr&eacute;er de la documentation </span>
+									<span class="job-title">Rechercher des informations &amp; Cr&eacute;er de la documentation </span>
 								</p>
 								<p>
 									<ul>
@@ -103,10 +103,10 @@
 
 								<ul>
 									<li>Cr&eacute;er des documents de promotion des collections et des
-										animations (<i>flyers</i>, affiches, brochures)&nbsp;;
+										animations (<i>flyers</i>, affiches, brochures)	
 									</li>
 								<div class="half-space centered">
-									<img src="./img/Licia-GASSAMA_affiche_freres-et-soeurs.png" alt="Affiche Fr&egrave;res et soeurs">
+									<img src="./img/Licia-GASSAMA_affiche_freres-et-soeurs.png" alt="Affiche Fr&egrave;res et s&oelig;urs">
 									<p> <small>Affiche r&eacute;alis&eacute;e pour une table de pr&eacute;sentation</small></p>
 
 								</div>
@@ -115,8 +115,8 @@
 									<p> <small>Affiche r&eacute;alis&eacute;e pour une table de pr&eacute;sentation</small></p>
 									
 								</div>
-									<li>Organiser et mettre en œuvre des animations dans un établissement et en dehors.<br>
-										Quelques exemples (survoler ou appuyer sur les couvertures pour plus d'informations) :
+									<li>Organiser et mettre en &&oelig;lig;uvre des animations dans un &eacute;tablissement et en dehors<br>
+										Quelques exemples&nbsp;:
 									</li>
 								</ul>
 								<div id="grid" class="card-grid">
@@ -127,7 +127,7 @@
 										<div class="text-content back">
 											<p class="animation-title"><em>La lecture
 												dans les albums jeunesse&nbsp;: quand la fiction et le r&eacute;el
-											s'emmêlent</em></p>
+											s'emm&ecirc;lent</em></p>
 											<p class="animation-desc">Animation autour de la construction du r&eacute;cit par la confrontation du texte et des images dans les albums <a href="http://www.editions-kaleidoscope.com/livre/loups-les/" target="_blank"><em>Les Loups</em> d'Emily Gravett</a> et <em>Le Livre rouge ou les aventures de	P&eacute;pin le glouton</em> de Ghislaine Herb&eacute;ra<br>(classes de cycle
 											3)</p>
 										</div>
@@ -157,6 +157,9 @@
 									</div>
 
 								</div>
+								<p class="bold centered">
+									Survoler ou appuyer sur les couvertures pour plus d'informations
+								</p>
 							</div>
 
 							
@@ -171,8 +174,8 @@
 				<div class="accordion" id="accordionFiction">
 					<div id="Fiction" class="card border-0" >
 						<div id="headingFiction" class="card-header">				
-							<h2 id="tileFiction">
-								<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseFiction" aria-expanded="true" aria-controls="collapseFiction"> Analyse de la fiction (litt&eacute;rature, cin&eacute;ma, s&eacute;ries TV) </button>
+							<h2 id="tileFiction" onclick="switchImg('plusFiction')">
+								<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseFiction" aria-expanded="true" aria-controls="collapseFiction"> Analyse de la fiction (litt&eacute;rature, cin&eacute;ma, s&eacute;ries TV) <img id="plusFiction" class="details pull-right" src='img/plus.png'></button>
 							</h2>
 						</div>
 						<div id="detailsFiction" class="padding-10">
@@ -183,7 +186,7 @@
 							<div id="bodyFiction" class="card-body border-0">
 								<div id="analyseFiction" class="job-description half-space">
 									<p>
-										<span class="job-title">Analyser une oeuvre de fiction </span>
+										<span class="job-title">Analyser une &oelig;uvre de fiction </span>
 									</p>
 									<p>
 										<ul>
@@ -197,8 +200,8 @@
 													<li>l'utilisation des proc&eacute;d&eacute;s d'ironie dans l'&eacute;nonciation.</li>
 												</ul>
 											<li>Utiliser les th&eacute;ories de la r&eacute;ception pour interroger le traitement du lecteur&nbsp;;</li>
-											<li>Mettre en relation diff&eacute;rentes versions d'une oeuvre sous diff&eacute;rents formats (intertextualit&eacute;, <em>crossmedia</em>)&nbsp;;</li>
-											<li>Mettre une oeuvre en relation avec son contexte historique et culturel de production&nbsp;;</li>
+											<li>Mettre en relation diff&eacute;rentes versions d'une &oelig;uvre sous diff&eacute;rents formats (intertextualit&eacute;, <em>crossmedia</em>)&nbsp;;</li>
+											<li>Mettre une &oelig;uvre en relation avec son contexte historique et culturel de production&nbsp;;</li>
 											<li>Rendre compte de cette analyse dans un texte court ou de moyenne longueur (de 200 mots/1 200 signes &agrave; 2 500 mots/15 000 signes). <br><button type="button" class="btn btn-more-info"><a href="travaux-notes-lecture.html">Quelques exemples</a></button>
 								</li>
 										</ul>
@@ -215,8 +218,8 @@
 								<p>
 									<ul>
 										<li>D&eacute;limiter le sujet de la recherche et construire une probl&eacute;matique&nbsp;;</li>
-										<li>Effectuer des recherches pr&eacute;paratoires pour construire une bibliographie et constituer un corpus d'oeuvres&nbsp;;</li>
-										<li>Analyser le corpus pour en distinguer les principales caract&eacute;ristiques et interroger le dialogue entre les oeuvres&nbsp;;</li>
+										<li>Effectuer des recherches pr&eacute;paratoires pour construire une bibliographie et constituer un corpus d'&oelig;uvres&nbsp;;</li>
+										<li>Analyser le corpus pour en distinguer les principales caract&eacute;ristiques et interroger le dialogue entre les &oelig;uvres&nbsp;;</li>
 										<li>R&eacute;diger un texte long pour pr&eacute;senter les r&eacute;sultats de la recherche de mani&egrave;re structur&eacute;e et argument&eacute;e&nbsp;;</li>
 										<li>Pr&eacute;senter oralement le travail de recherche (r&eacute;sum&eacute; des r&eacute;sultats, bilan sur les obstacles rencontr&eacute;s).</li>
 									</ul>
@@ -233,8 +236,8 @@
 			<div id="informatique">
 					<div class="accordion" id="accordionInformatique">
 						<div id="Informatique" class="card border-0" >
-							<div id="headingInformatique" class="card-header">				<h2 id="tileInformatique">
-								<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseInformatique" aria-expanded="true" aria-controls="collapseInformatique"> Informatique </button>
+							<div id="headingInformatique" class="card-header">				<h2 id="tileInformatique" onclick="switchImg('plusInformatique')">
+								<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseInformatique" aria-expanded="true" aria-controls="collapseInformatique"> Informatique <img id="plusInformatique" class="details pull-right" src='img/plus.png'></button>
 							</h2>
 						</div>
 						<div id="detailsInformatique" class="padding-10">
@@ -294,13 +297,12 @@
 				</div>
 			</div> 
 
-
 			<div id="langues">
 				<div class="accordion" id="accordionLangues">
 					<div id="Langues" class="card border-0" >
 						<div id="headingLangues" class="card-header">				
-							<h2 id="tileLangues">
-								<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseLangues" aria-expanded="true" aria-controls="collapseLangues"> Langues </button>
+							<h2 id="tileLangues" onclick="switchImg('plusLangues')">
+								<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseLangues" aria-expanded="true" aria-controls="collapseLangues"> Langues <img id="plusLangues" class="details pull-right" src='img/plus.png'></button>
 							</h2>
 						</div>
 						<div id="detailsLangues" class="padding-10">
@@ -313,7 +315,7 @@
 									<span class="job-title">Anglais </span>
 								</p>
 
-								<p>Niveau C1 : Utilisatrice exp&eacute;riment&eacute;e (niveau autonome) &mdash; 4 ann&eacute;es d'exp&eacute;rience professionnelle &agrave; Londres</p>
+								<p>Niveau C1&nbsp;: Utilisatrice exp&eacute;riment&eacute;e (niveau autonome) &mdash; 4 ann&eacute;es d'exp&eacute;rience professionnelle &agrave; Londres</p>
 
 							</div>
 						</div>
@@ -335,6 +337,8 @@
 <!-- SCRIPTS -->
 
 <script src="./js/navbar_script.js" type="text/javascript"></script>
+
+<script src="./js/general_script.js" type="text/javascript"></script>
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
