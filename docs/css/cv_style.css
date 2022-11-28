@@ -551,9 +551,14 @@ img.details{
 
   .poster {
     width: 95%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
   }
 
+
 /* Zone de description - FIN */
+
 
 
 /* TRAVAUX - FIN */
@@ -697,4 +702,8 @@ img.details{
 
 img .border {
   border: 2px #f1f1f1 solid;
+}
+
+.imgCollapse {
+
 }
