@@ -107,6 +107,9 @@ main {
     width: 60%;
   }
 
+.top-align {
+  vertical-align: top;
+}
 /* Body - Header / Footer */
   #banner-header {
     margin-top: 25;
