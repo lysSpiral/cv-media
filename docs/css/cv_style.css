@@ -433,6 +433,14 @@ img.details{
 
   }
 
+  .job-dates-long {
+    /*padding-left: 6vw;*/
+    float: right;
+    display:inline-block;
+    font-size:0.95rem;
+
+  }
+
   .job-description {
     padding-bottom: 5vh;
   }
