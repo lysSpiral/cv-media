@@ -657,8 +657,10 @@ img.details{
 
   .text-banner-left {
     text-align: center;
-    padding-left: 60px;
+    padding-left: 50px;
     float:none;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
 
   }
   .text-banner-right {
