@@ -44,49 +44,57 @@
 	</nav>
 
 	<main class="padding-left">
-		<div class="page-title">
+		<div id="pageTopExp" class="page-title">
 			<h2>
 				Exp&eacute;riences 
 			</h2>
 		</div>
-		<p class="padding-10 white-bg centered">Cliquer sur chaque domaine pour voir la liste des postes et le descriptif des missions</p>
+		<ul id="SommaireDomainesExp">
+			<li class="exp-list"><a href="#LecturePub" onclick="openCollapseSamePage('#LecturePub')">Lecture publique</a></li>
+			<li class="exp-list"><a href="#AnimSocioCult" onclick="openCollapseSamePage('#AnimSocioCult')">Animation socio-culturelle</a></li>
+			<li class="exp-list"><a href="#Enseignement" onclick="openCollapseSamePage('#Enseignement')">Enseignement</a></li>
+			<li class="exp-list"><a href="#Documentation" onclick="openCollapseSamePage('#Documentation')">Documentation</a></li>
+			<li class="exp-list em"><a href="#OtherFields" onclick="openCollapseSamePage('#OtherFields')">Autres domaines (Support logiciel, PAO, gestion de projets culturels)</a></li>
+		</ul>
+		<p class="padding-10 white-bg centered">Cliquer sur chaque domaine pour faire appara&icirc;tre la liste des postes et le descriptif des missions</p>
 		
 
 <div id="LecturePub">
 	<div class="accordion" id="accordionLecturePub">
 		<div id="LecturePub" class="card border-0" >
 	<div id="headingLecturePub" class="card-header">
-		<h2 id="tileLecturePub" onclick="switchImg('minusLecturePub')">
-			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseLecturePub" aria-expanded="true" aria-controls="collapseLecturePub"> Lecture publique <img id="minusLecturePub" class="imgCollapse details pull-right" src='img/minus.png'> </button>
+		<h2 id="tileLecturePub" onclick="switchImg('plusLecturePub')">
+			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseLecturePub" aria-expanded="true" aria-controls="collapseLecturePub"> Lecture publique <img id="plusLecturePub" class="details pull-right" src='img/plus.png'> </button>
 		</h2>
 	</div>
 
-	<div id="collapseLecturePub" class=" collapse show" aria-labelledby="headingLecturePub" data-parent="#accordionLecturePub">
+	<div id="collapseLecturePub" class="collapse" aria-labelledby="headingLecturePub" data-parent="#accordionLecturePub">
 	 	<div id="bodyLecturePub" class="card-body border-0">
 			<div id='jobListBib'>
+				<p> <span class="job-location">** Missions de remplacement</span> </p>
 				<p>
 					<span class="job-dates">Mars – Ao&ucirc;t 2023</span>
-					<span class="job-title">M&eacute;diath&eacute;caire Jeunesse (temps partiel)</span>
+					<span class="job-title">M&eacute;diath&eacute;caire Jeunesse (temps partiel) **</span>
 					<span class="job-location">R&eacute;seau des biblioth&egrave;ques, Meylan (Is&egrave;re)</span>
 				</p>
 				<p>
 					<span class="job-dates-long">Nov. 2021 – Mai 2022</span>
-					<span class="job-title">Agent de biblioth&egrave;que BD / Jeunesse</span>
+					<span class="job-title">Agent de biblioth&egrave;que BD / Jeunesse  **</span>
 					<span class="job-location">M&eacute;diath&egrave;que L'Ellipse, Sassenage (Is&egrave;re)</span>
 				</p>
 				<p>
 					<span class="job-dates">Avril – Juin 2021</span>
-					<span class="job-title">Agent de biblioth&egrave;que Jeunesse</span>
+					<span class="job-title">Agent de biblioth&egrave;que Jeunesse  **</span>
 					<span class="job-location">M&eacute;diath&egrave;que Georges-Brassens, Claix (Is&egrave;re)</span>
 				</p>
 				<p>
 					<span class="job-dates-long">D&eacute;c. 2019 – Mars 2020</span>
-					<span class="job-title">M&eacute;diath&eacute;caire section Adultes</span>
+					<span class="job-title">M&eacute;diath&eacute;caire section Adultes  **</span>
 					<span class="job-location">M&eacute;diath&egrave;que Condorcet, Viry-Ch&acirc;tillon (IdF)</span>
 				</p>
 				<p>
 					<span class="job-dates">Jan. – Juin 2018</span>
-					<span class="job-title">M&eacute;diath&eacute;caire</span>
+					<span class="job-title">M&eacute;diath&eacute;caire **</span>
 					<span class="job-location">CE RATP, Fontenay-sous-Bois (IdF)/ Paris</span>
 				</p>
 				<p>
@@ -101,17 +109,17 @@
 				</p>
 				<p>
 					<span class="job-dates-long">D&eacute;c. 2013 – Juin 2014</span>
-					<span class="job-title">Agent de biblioth&egrave;que</span>
+					<span class="job-title">Agent de biblioth&egrave;que **</span>
 					<span class="job-location">M&eacute;diath&egrave;que de Ch&acirc;tenay-Malabry (IdF)</span>
 				</p>
 				<p>
 					<span class="job-dates">Jan. – Août 2013</span>
-					<span class="job-title">M&eacute;diath&eacute;caire Jeunesse (BCD et Bibliobus)</span>
+					<span class="job-title">M&eacute;diath&eacute;caire Jeunesse (BCD et Bibliobus) **</span>
 					<span class="job-location">Biblioth&egrave;que Nelson-Mandela, Vitry-sur-Seine (IdF)</span>
 				</p>
 				<p>
 					<span class="job-dates">Sep. – D&eacute;c. 2012</span>
-					<span class="job-title">M&eacute;diath&eacute;caire Jeunesse </span>
+					<span class="job-title">M&eacute;diath&eacute;caire Jeunesse **</span>
 					<span class="job-location">M&eacute;diath&egrave;que Jos&eacute;-Cabanis, Toulouse</span>
 				</p>
 			</div>
@@ -135,7 +143,7 @@
 						<ul>
 							<li>Ensemble des collections (BCD Anatole France &agrave; Vitry-sur-Seine, Montesson)&nbsp;;</li>
 							<li>Fonds <strong>Romans Ado</strong>, <strong>Romans illustr&eacute;s</strong>, <strong>G&eacute;ographie</strong> (Jeunesse), <strong>DVD</strong> (Adultes et Jeunesse) (Ch&acirc;tenay-Malabry)&nbsp;;</li>
-							<li>Fonds <strong>Bandes dessinées (Adulte & Jeunesse)</strong>, <strong>Documentaires Jeunesse</strong> (pour les enfants de plus de 8 ans) (Sassenage)&nbsp;;
+							<li>Fonds <strong>Bandes dessin&eacute;es (Adulte & Jeunesse)</strong>, <strong>Documentaires Jeunesse</strong> (pour les enfants de plus de 8 ans) (Sassenage)&nbsp;;
 							</li>
 							<li>Fonds <strong>Point Parents Enfants</strong> (documentaires &agrave; destination des parents et &eacute;ducateurs) (Toulouse).</li>
 						</ul>
@@ -151,7 +159,7 @@
 					<ul>
 						<li>Accueils de classes pour des s&eacute;ances de d&eacute;couverte des collections ou des animations th&eacute;matiques&nbsp;:
 							<ul>
-								<li>conception et animation des séances&nbsp;;</li>
+								<li>conception et animation des s&eacute;ances&nbsp;;</li>
 								<li>gestion du planning d'accueils.</li>
 							</ul>
 						<strong>
@@ -164,16 +172,16 @@
 							<li>Prot&eacute;geons la Nature ! (cycle 1)</li>
 							<li>Panique au château-fort (cycles 2 et 3)</li>
 							<li>Les Couleurs&nbsp;: arts et langage (cycle 2)</li>
-							<li>Les Contes détournés (cycle 2)</li>
+							<li>Les Contes d&eacute;tourn&eacute;s (cycle 2)</li>
 							<li>La Lecture dans les albums jeunesse &nbsp;: quand la fiction et le r&eacute;el s'emmêlent (cycle 3)</li>
-							<li>La Mythologie grecque&nbsp;: d'Outis à Ulysse (cycle 3)</li>
+							<li>La Mythologie grecque&nbsp;: d'Outis &aacute; Ulysse (cycle 3)</li>
 						</ul>
 
 						</li>
 						<li>S&eacute;ances d'heures du conte (familles et centres de loisirs) et d'accueil RAM et cr&egrave;ches&nbsp;;
 						<li>Interventions hors les murs (cr&egrave;ches, &eacute;coles, coll&egrave;ges)&nbsp;;</li>
 						<li>Animation de rondes de livres dans des classes de cycle&nbsp;3 et au coll&egrave;ge (Vitry-sur-Seine)&nbsp;;</li>
-						<li>Sélections bibliographiques  (s&eacute;lection des titres, cr&eacute;ation d’un document imprim&eacute; et/ou de présentations sur le portail)&nbsp;:
+						<li>S&eacute;lections bibliographiques  (s&eacute;lection des titres, cr&eacute;ation d’un document imprim&eacute; et/ou de pr&eacute;sentations sur le portail)&nbsp;:
 							<ul>
 								<li>S&eacute;lections &agrave; destination du grand public,</li>
 								<li>Malles th&eacute;matiques &agrave; destination des professionnels de l’enfance&nbsp;;</li>
@@ -183,14 +191,18 @@
 						<li>Participation &agrave; la s&eacute;lection des œuvres pour des prix litt&eacute;raires jeunesse (<strong>Prix litt&eacute;raire des &eacute;coles 2014-2015</strong>, Ch&acirc;tenay-Malabry / <strong>Prix Bermond-Boqui&eacute; 2015-2016</strong>, Nantes)&nbsp;;</li>
 						<li>Pr&eacute;sentations &agrave; destination du grand public ou de professionnels.</li>
 					</ul>
+
 				
 				</div>
 			</div>
 	 		
 		</div>
+		<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 	</div>
+
 		</div>
 	</div>
+
 </div>
 
 <div class="white-bg">
@@ -203,7 +215,7 @@
 		<div id="AnimSocioCult" class="card border-0">
 			<div id="headingAnimSocioCult" class="card-header" >				
 				<h2 id="tileAnimSocioCult" onclick="switchImg('plusAnimSocioCult')">
-					<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseAnimSocioCult" aria-expanded="true" aria-controls="collapseAnimSocioCult"> Animation socio-culturelle <img id="plusAnimSocioCult" class="imgCollapse details pull-right" src='img/plus.png'></button>
+					<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseAnimSocioCult" aria-expanded="true" aria-controls="collapseAnimSocioCult"> Animation socio-culturelle <img id="plusAnimSocioCult" class="details pull-right" src='img/plus.png'></button>
 				</h2>
 			</div>
 
@@ -213,20 +225,56 @@
 
 						<div class="job-description">
 					<p>
+						<span class="job-dates">Nov. 2023 – Juin 2024</span>
+						<span class="job-title">Animatrice r&eacute;f&eacute;rente des Ateliers Langage et Expression</span>
+						<span class="job-location">CSF, Grenoble / Saint-Martin-d'H&egrave;res (Is&egrave;re)</span>
+					</p>
+					<p>
+					R&eacute;f&eacute;rente du dispositif <em>Ateliers langage et expression</em> au sein de l'&eacute;cole &eacute;l&eacute;mentaire Voltaire (Saint-Martin-d'H&egrave;res, Is&egrave;re).<br>
+					Ateliers bihebdomadaires apr&egrave;s l'&eacute;cole pour deux groupes de 10 enfants du CP au CE2, dans le cadre du projet d’ann&eacute;e <a href="https://lacsf38.org/lacsf38/le-projet-citizens-graines/" target="_blank"><em>Citizens graines&nbsp;: les m&ocirc;mes font la une</em></a> centr&eacute; sur le d&eacute;veloppement des comp&acute;tences d'expression, l'appropriation de la langue orale et écrite, la d&eacute;couverte de la presse et la cr&eacute;ation de contenus pour un <a href="https://lacsf38.org/le-journal-la-voix-des-momes/" target="_blank">journal&nbsp;</a>:
+						<ul>
+							<li>Conception p&eacute;dagogique des s&eacute;ances et pr&eacute;paration du mat&eacute;riel</li>
+							<li>Animation des ateliers, en binôme avec une co-animatrice</li>
+							<li>Lien avec l’&eacute;quipe p&eacute;dagogique de l’&eacute;cole</li>
+							<li>Suivi des enfants et lien avec les parents</li>
+							<li>Lien avec l’ensemble de l’&eacute;quipe animation afin d’assurer la coh&eacute;rence du projet sur les diff&eacute;rentes &eacute;coles</li>
+							<li>Organisation et animation de sorties</li>
+							<li>Collaboration avec la R&eacute;f&eacute;rente famille de la Maison de quartier</li>
+						</ul> 
+					</p>
+					<p>
+						<strong>Activit&eacute;s men&eacute;es&nbsp;:</strong>
+					<ul>
+						<li>Cr&eacute;ation de contenus pour le journal <a href="https://lacsf38.org/le-journal-la-voix-des-momes/" target="_blank"><em>La voix des m&ocirc;mes</em> (num&eacute;ros 10, 11 et 12)</a>&nbsp;: ab&eacute;c&eacute;daire illustr&eacute;, textes explicatifs accompagn&eacute;s de dessins d'illustration ou explicatifs, jeux (labyrinthes, jeux de lettres...)
+						 </li>
+						<li>Ateliers philo</li>
+						<li>Ateliers d'&eacute;criture cr&eacute;ative (virelangues illustr&eacute;s par des collage)</li>
+					</ul>
+
+
+					</p>
+				
+				</div>
+
+						<div class="job-description">
+					<p>
 						<span class="job-dates">Juin 2023</span>
 						<span class="job-title">Animation d'ateliers &ldquo;Papotages &amp; Gribouillages&rdquo; </span>
 					</p>
 					<p>
-					S&eacute;ances individuelles alliant moments d'&eacute;changes, cr&eacute;ation graphique et &eacute;criture cr&eacute;ative (public Adultes).<br>
-<strong>Th&egrave;mes explor&eacute;s&nbsp;:</strong>
-<ul>
-	<li><strong>Vies d’un personnage</strong>&nbsp;: exploration autour de personnages f&eacute;minins mythiques&nbsp;;</li>
-	<li><strong>Dans l’oeil des femmes aux pinceaux</strong>&nbsp;: voyage dans l'oeuvre de femmes artistes peintres&nbsp;;</li>
-	<li><strong>Pluri·elles</strong>&nbsp;: partage d'exp&eacute;riences autour des f&eacute;minismes&nbsp;;</li>
-	<li><strong>F&eacute;ministons l'imaginaire</strong>&nbsp;: cr&eacute;ation d'un texte à partir d'une illustration/photo après une exploration de la place des femmes dans la Soci&eacute;t&eacute;.</li>
-</ul>
+					S&eacute;ances individuelles alliant moments d'&eacute;changes, cr&eacute;ation graphique et &eacute;criture cr&eacute;ative (public Adultes).</p>
+					<p>
+					<strong>Th&egrave;mes explor&eacute;s&nbsp;:</strong>
+						<ul>
+							<li><strong>Vies d’un personnage</strong>&nbsp;: exploration autour de personnages f&eacute;minins mythiques&nbsp;;</li>
+							<li><strong>Dans l’oeil des femmes aux pinceaux</strong>&nbsp;: voyage dans l'oeuvre de femmes artistes peintres&nbsp;;</li>
+							<li><strong>Pluri·elles</strong>&nbsp;: partage d'exp&eacute;riences autour des f&eacute;minismes&nbsp;;</li>
+							<li><strong>F&eacute;ministons l'imaginaire</strong>&nbsp;: cr&eacute;ation d'un texte &aacute; partir d'une illustration/photo après une exploration de la place des femmes dans la Soci&eacute;t&eacute;.</li>
+						</ul>
+
 
 					</p>
+				
 				</div>
 
 
@@ -237,12 +285,13 @@
 						<span class="job-location">MJC Abbaye, Grenoble</span>
 					</p>
 					<p>
-					S&eacute;ances hebdomadaires proposant jeux et ateliers de discussion philosophique (en complément des s&eacute;ances d'aide aux devoirs) pour des enfants de 7 &agrave; 13 ans (2 groupes) dans le cadre d'un dispostif d'accompagnement à la scolarit&eacute; b&eacute;n&eacute;volat).
+					S&eacute;ances hebdomadaires proposant jeux et ateliers de discussion philosophique (en compl&eacute;ment des s&eacute;ances d'aide aux devoirs) pour des enfants de 7 &agrave; 13 ans (2 groupes) dans le cadre d'un dispostif d'accompagnement &aacute; la scolarit&eacute; b&eacute;n&eacute;volat).
 					</p>
 				</div>
 					</div>
 			 		
 				</div>
+				<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 			</div>
 		</div>
 	</div>
@@ -258,7 +307,7 @@
 		<div id="Enseignement" class="card border-0">
 			<div id="headingEnseignement" class="card-header" >				
 				<h2 id="tileEnseignement" onclick="switchImg('plusEnseignement')">
-					<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseEnseignement" aria-expanded="true" aria-controls="collapseEnseignement"> Enseignement <img id="plusEnseignement" class="imgCollapse details pull-right" src='img/plus.png'></button>
+					<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseEnseignement" aria-expanded="true" aria-controls="collapseEnseignement"> Enseignement <img id="plusEnseignement" class="details pull-right" src='img/plus.png'></button>
 				</h2>
 			</div>
 
@@ -299,6 +348,7 @@
 					</div>
 			 		
 				</div>
+				<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 			</div>
 		</div>
 	</div>
@@ -314,7 +364,7 @@
 		<div id="Documentation" class="card border-0">
 			<div id="headingDocumentation" class="card-header" >				
 				<h2 id="tileDocumentation" onclick="switchImg('plusDocumentation')">
-					<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseDocumentation" aria-expanded="true" aria-controls="collapseDocumentation"> Documentation <img id="plusDocumentation" class="imgCollapse details pull-right" src='img/plus.png'></button>
+					<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseDocumentation" aria-expanded="true" aria-controls="collapseDocumentation"> Documentation <img id="plusDocumentation" class="details pull-right" src='img/plus.png'></button>
 				</h2>
 			</div>
 
@@ -324,16 +374,16 @@
 						<div class="job-description">
 							<p>
 								<span class="job-dates">Juil. – Oct. 2022</span>
-								<span class="job-title">Opératrice de documentation</span>
+								<span class="job-title">Op&eacute;ratrice de documentation</span>
 								<span class="job-location">Decitre, Lyon</span>
 							</p>
 							<p>
 								R&eacute;f&eacute;rencement des ouvrages commercialis&eacute;s dans le r&eacute;seau Decitre / Furet du Nord dans la base de donn&eacute;es interne&nbsp;:
 								<ul>
-									<li>Révision des informations envoyées par flux&nbsp;;</li>
-									<li>Saisie des informations à partir des documents physiques&nbsp;;</li>
-									<li>Relecture des résumés saisis par OCR&nbsp;;</li>
-									<li>Création de nouvelles fiches à la demande des éditeurs et diffuseurs.</li>
+									<li>R&eacute;vision des informations envoy&eacute;es par flux&nbsp;;</li>
+									<li>Saisie des informations &aacute; partir des documents physiques&nbsp;;</li>
+									<li>Relecture des r&eacute;sum&eacute;s saisis par OCR&nbsp;;</li>
+									<li>Cr&eacute;ation de nouvelles fiches &aacute; la demande des &eacute;diteurs et diffuseurs.</li>
 								</ul>
 							</p>
 						</div>
@@ -427,6 +477,7 @@
 					</div>
 			 		
 				</div>
+				<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 			</div>
 		</div>
 	</div>
@@ -442,7 +493,7 @@
 	<div class="accordion" id="accordionOtherFields">
 		<div id="OtherFields" class="card border-0" >
 	<div id="headingOtherFields" class="card-header" >	<h2 id="tileOtherFields" onclick="switchImg('plusOtherFields')">
-			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseOtherFields" aria-expanded="true" aria-controls="collapseOtherFields"> Autres domaines (Support logiciel, PAO, Gestion de projets culturels) <img id="plusOtherFields" class="imgCollapse details pull-right" src='img/plus.png'></button>
+			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseOtherFields" aria-expanded="true" aria-controls="collapseOtherFields"> Autres domaines (Support logiciel, PAO, Gestion de projets culturels) <img id="plusOtherFields" class="details pull-right" src='img/plus.png'></button>
 		</h2>
 	</div>
 
@@ -505,6 +556,7 @@
 			</div>
 	 		
 		</div>
+		<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 	</div>
 		</div>
 	</div>

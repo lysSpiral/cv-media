@@ -50,7 +50,57 @@
 			</h2>
 
 		</div>
-		<p class="padding-10 white-bg centered">Cliquer sur le nom des diplômes pour voir la liste des cours et de quelques travaux r&eacute;alis&eacute;s</p>
+		<ul id="SommaireFormations">
+			<li class="exp-list"><a href="#FormationBaseIris" onclick="openCollapseSamePage('#FormationBaseIris')">Formation de base en animation socio-linguistique (ASL)</a></li>
+			<li class="exp-list"><a href="#FormationAtelierEcr" onclick="openCollapseSamePage('#FormationAtelierEcr')">Formation &agrave; la conception et &agrave; l'animation d'ateliers d'&eacute;criture</a></li>
+			<li class="exp-list"><a href="#FormationSEVE" onclick="openCollapseSamePage('#FormationSEVE')">Formation &agrave; l’animation d’ateliers de philosophie avec des enfants et des adolescents</a></li>
+			<li class="exp-list"><a href="#MasterLIJE" onclick="openCollapseSamePage('#MasterLIJE')">Master Litt&eacute;ratures d'enfance et de jeunesse</a></li>
+			<li class="exp-list"><a href="#L3Bib" onclick="openCollapseSamePage('#L3Bib')">Licence Biblioth&egrave;ques</a></li>
+			<li class="exp-list em"><a href="#M1InfoDoc" onclick="openCollapseSamePage('#M1InfoDoc')">Master 1 Gestion de l’information et du document</a></li>
+		</ul>
+		<p class="padding-10 white-bg centered">Cliquer sur le nom des dipl&ocirc;mes/formations pour faire appara&icirc;tre la liste des cours et de quelques travaux r&eacute;alis&eacute;s</p>
+
+<div id="FormationBaseIris">
+	<div class="accordion" id="accordionFormationBaseIris">
+		<div id="FormationBaseIris" class="card border-0" >
+	<div id="headingFormationBaseIris" class="card-header">		<h2 id="tileFormationBaseIris" onclick="switchImg('plusFormationBaseIris')">
+			<button class="btn btn-block text-left font-weight-bold accordion-heading" type="button" data-toggle="collapse" data-target="#collapseFormationBaseIris" aria-expanded="true" aria-controls="collapseFormationBaseIris" > Formation de base en animation socio-linguistique (ASL) <img id="plusFormationBaseIris" class="imgCollapse details pull-right" src='img/plus.png'></button>
+		</h2>
+	</div>
+	<div id="detailsFormationBaseIris" class="padding-10">
+		<div class="diploma-info uni-info">
+		<img class="details" src='img/uni.png'>
+							Centre Ressources Illettrisme IRIS, Grenoble (Is&egrave;re)
+		</div>
+		<div class="diploma-info year-info">
+			<img class="details" src='img/calendar.png'>
+							Septembre-Octobre 2023
+		</div>
+	</div>
+
+	<div id="collapseFormationBaseIris" class="collapse" aria-labelledby="headingFormationBaseIris" data-parent="#accordionFormationBaseIris">
+	 	<div id="bodyFormationBaseIris" class="card-body border-0">
+	 		<div id="BaseASL">
+	 			<p>Formation à l'intention des intervenants p&eacute;dagogiques en <a href="http://www.aslweb.fr/asl-menu/charte-des-asl/" target="_blank">animation socio-linguistique (ASL)</a> visant à leur permettre de&nbsp;:
+	 				<ul>
+	 					<li>Situer le dispositif ASL dans son cadre institutionnel et pédagogique</li>
+	 					<li>Identifier et s’adapter aux différents profils d’apprenants</li>
+	 					<li>Mesurer les enjeux d’une posture andragogique aupr&egrave;s d’adultes migrants pour favoriser les apprentissages</li>
+	 					<li>Choisir des objectifs p&eacute;dagogiques et des activit&eacute;s adapt&eacute;s pour animer des s&eacute;ances</li>
+	 				</ul>
+	 				<button type="button" class="btn btn-more-info"><a href="files/2023_Iris38_Base-ASL.pdf" target="_blank">En savoir plus sur cette formation</a></button>
+				</p>
+
+						
+		</div>
+	 		
+		</div>
+		<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop  pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
+	</div>
+
+		</div>
+	</div>
+</div>
 		
 <div id="FormationAtelierEcr">
 	<div class="accordion" id="accordionFormationAtelierEcr">
@@ -62,7 +112,7 @@
 	<div id="detailsFormationAtelierEcr" class="padding-10">
 		<div class="diploma-info uni-info">
 		<img class="details" src='img/uni.png'>
-							La Maison des &Eacute;crits
+							La Maison des &Eacute;crits, &Eacutechirolles (Is&egrave;re)
 		</div>
 		<div class="diploma-info year-info">
 			<img class="details" src='img/calendar.png'>
@@ -71,7 +121,7 @@
 	</div>
 
 	<div id="collapseFormationAtelierEcr" class="collapse" aria-labelledby="headingFormationAtelierEcr" data-parent="#accordionFormationAtelierEcr">
-	 	<div id="bodyFormationAtelierEcr" class="card-body border">
+	 	<div id="bodyFormationAtelierEcr" class="card-body border-0">
 	 		<div id="atelierEcr">
 	 			<p>Formation &agrave; la conception et &agrave; l'animation d'ateliers d'&eacute;criture créative, au travers de plusieurs thématiques&nbsp;: l'autobiographie, la fiction, la po&eacute;sie, les dispositifs de rue et la posture de l'animateur-trice (9 s&eacute;ances).
 				</p>
@@ -80,6 +130,7 @@
 		</div>
 	 		
 		</div>
+		<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop  pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 	</div>
 		</div>
 	</div>
@@ -104,7 +155,7 @@
 	</div>
 
 	<div id="collapseFormationSEVE" class="collapse" aria-labelledby="headingFormationSEVE" data-parent="#accordionFormationSEVE">
-	 	<div id="bodyFormationSEVE" class="card-body border">
+	 	<div id="bodyFormationSEVE" class="card-body border-0">
 	 		<div id="seve">
 	 			<p>Parcours de formation (8 journ&eacute;es de pr&eacute;sentiel, mise en pratique et parcours e-learning) autour de 4 p&ocirc;les&nbsp;:
 		 			<ul>
@@ -120,6 +171,7 @@
 		</div>
 	 		
 		</div>
+		<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop  pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 	</div>
 		</div>
 	</div>
@@ -150,11 +202,11 @@
 	</div>
 
 	<div id="collapseMasterLIJE" class="collapse" aria-labelledby="headingMasterLIJE" data-parent="#accordionMasterLIJE">
-	 	<div id="bodyMasterLIJE" class="card-body border">
+	 	<div id="bodyMasterLIJE" class="card-body border-0">
 	 		<div id="lipje">
 	 			<p>Cours sur l’histoire, l’&eacute;tude, la didactique et la
 					r&eacute;ception de la litt&eacute;rature pour les publics Jeunesse.<br>
-					<button type="button" class="btn btn-more-info"><a href="http://formations.univ-artois.fr/cdm/fr-FR/fiche/do-presentation-FR_RNE_0623957P_PR_MM5LTRE152#presentation" target="_blank">En savoir plus sur cette formation</a></button>
+					<button type="button" class="btn btn-more-info"><a href="https://formations.univ-artois.fr/fr/formations/feuilleter-le-catalogue/master-lmd-XB/master-lettres-litterature-d-enfance-et-jeunesse-LJ6W9GRJ.html" target="_blank">En savoir plus sur cette formation</a></button>
 				</p>
 
 					<p class="bold sub-title">Quelques travaux r&eacute;alis&eacute;s</p>	
@@ -227,6 +279,7 @@
 							
 						</div>
 					</div>
+					<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop  pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 		</div>
 	 		
 		</div>
@@ -260,7 +313,7 @@
 	</div>
 
 	<div id="collapseL3Bib" class="collapse" aria-labelledby="headingL3Bib" data-parent="#accordionL3Bib">
-	 	<div id="bodyL3Bib" class="card-body border">
+	 	<div id="bodyL3Bib" class="card-body border-0">
 	 		
 				<div id="bib">
 					<div class="third-space">
@@ -304,7 +357,7 @@
 						</p>
 					</div>			
 			</div>
-	 		
+	 		<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop  pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 		</div>
 	</div>
 		</div>
@@ -335,7 +388,7 @@
 	</div>
 
 	<div id="collapseM1InfoDoc" class="collapse" aria-labelledby="headingM1InfoDoc" data-parent="#accordionM1InfoDoc">
-	 	<div id="bodyM1InfoDoc" class="card-body border">
+	 	<div id="bodyM1InfoDoc" class="card-body border-0">
 			<div id='gid'>
 				<div class="third-space">
 						<p class="job-title">Traitement documentaire</p>
@@ -378,6 +431,7 @@
 			</div>
 	 		
 		</div>
+		<a href="#banner-header"><img src="img/back.png" class=" imgBackToTop  pull-right" alt="Retour en haut de la page" onclick="closeCollapseAll()"></a>
 	</div>
 		</div>
 	</div>
